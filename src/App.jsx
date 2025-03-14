@@ -7,7 +7,7 @@ import Services from "./pages/Services";
 import SignUp from "./pages/SignUp";
 import ForgotPassword from "./pages/ForgotPassword";
 import BecomeATaskPerformer from "./pages/BecomeATaskPerformer";
-
+import '@fortawesome/fontawesome-free/css/all.min.css'
 function App() {
   return (
     <div className="h-screen">

@@ -39,7 +39,7 @@ const Navbar = () => {
         >
           Sign up / Log in
         </span>
-        <button className="bg-orange-500 hover:bg-Orange text-white px-4 py-2 rounded-md">
+        <button onClick={() => handleNavigation('/become-a-task-performer')} className="bg-orange-500 hover:bg-Orange text-white px-4 py-2 rounded-md">
           Become a 
         </button>
       </div>
@@ -83,8 +83,9 @@ const Navbar = () => {
           >
             Sign up / Log in
           </span>
+          
           <div className="px-4 py-3">
-            <button className="bg-orange-500 hover:bg-Orange text-white px-4 py-2 rounded-md w-full">
+            <button  onClick={() => handleNavigation('/become-a-task-performer')}  className="bg-orange-500 hover:bg-Orange text-white px-4 py-2 rounded-md w-full">
               Become a 
             </button>
           </div>

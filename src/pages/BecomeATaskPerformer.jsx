@@ -1,8 +1,9 @@
 import React from 'react'
+import Footer from '../components/Footer'
 
 const BecomeATaskPerformer = () => {
   return (
-    <div>BecomeATaskPerformer</div>
+    <Footer />
   )
 }
 
