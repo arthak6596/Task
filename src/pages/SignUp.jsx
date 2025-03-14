@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const SignUp = () => {
   const [name, setName] = useState('');
@@ -19,6 +21,8 @@ const SignUp = () => {
     setShowConfirmPassword(!showConfirmPassword);
   };
   return (
+    <>
+    <Navbar/>
     <div className="min-h-screen relative overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img 
@@ -40,7 +44,7 @@ const SignUp = () => {
               <input 
                 type='name'
                 id='name'
-                className='w-full px-4 py-2 border-gray-300 border rounded focus:outline-none focus:ring-2 focus:ring-primary'
+                className='w-full px-4 py-2 border-gray-300 border rounded focus:outline-none focus:ring-2 focus:ring-Orange'
                 placeholder="Full Name"
                 value={name}
                 onChange={(e)=>setName(e.target.value)}
@@ -52,7 +56,7 @@ const SignUp = () => {
               <input 
                 type="email" 
                 id="email" 
-                className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary"
+                className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-Orange"
                 placeholder="Email Address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -66,7 +70,7 @@ const SignUp = () => {
                 <input 
                   type={showPassword ? "text" : "password"}
                   id="password" 
-                  className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary"
+                  className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-Orange"
                   placeholder="Password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
@@ -98,7 +102,7 @@ const SignUp = () => {
                 <input 
                   type={showConfirmPassword ? "text" : "password"}
                   id="confirm-password" 
-                  className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary"
+                  className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-Orange"
                   placeholder="Confirm Password"
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
@@ -158,6 +162,8 @@ const SignUp = () => {
 
 
     </div>
+    <Footer />
+    </>
   );
 };
 

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState('');
@@ -9,6 +11,9 @@ const ForgotPassword = () => {
   };
 
   return (
+    <>
+    <Navbar />
+    
     <div className="min-h-screen relative overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img 
@@ -29,7 +34,7 @@ const ForgotPassword = () => {
               <input 
                 type="email" 
                 id="email" 
-                className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary"
+                className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-Orange"
                 placeholder="Email Address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -64,6 +69,8 @@ const ForgotPassword = () => {
 
 
     </div>
+    <Footer/>
+    </>
   );
 };
 

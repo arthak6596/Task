@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import ServiceCardsGrid from '../assets/ServiceCardGrid';
+import Footer from '../components/Footer';
 
 const Services = () => {
   return (
@@ -16,6 +17,7 @@ const Services = () => {
       </div>
       <div className='flex text-2xl justify-center items-center font-semibold mt-8 mb-4'>Hire a Trusted Task Performer</div>
       <ServiceCardsGrid />
+      <Footer />
     </div>
   );
 };

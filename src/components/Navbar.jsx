@@ -40,7 +40,7 @@ const Navbar = () => {
           Sign up / Log in
         </span>
         <button onClick={() => handleNavigation('/become-a-task-performer')} className="bg-orange-500 hover:bg-Orange text-white px-4 py-2 rounded-md">
-          Become a 
+          Become a Task Performer
         </button>
       </div>
       

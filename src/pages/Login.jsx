@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -12,7 +14,10 @@ const Login = () => {
     setShowPassword(!showPassword);
   };
   return (
+    <>
+    <Navbar />
     <div className="min-h-screen relative overflow-hidden">
+      
       <div className="absolute inset-0 z-0">
         <img 
           src="images/loginBg1.webp" 
@@ -105,8 +110,10 @@ const Login = () => {
         </button>
       </div> */}
 
-
+        
     </div>
+    <Footer />
+    </>
   );
 };
 
