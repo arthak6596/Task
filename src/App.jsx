@@ -6,6 +6,7 @@ import Login from "./pages/Login";
 import Services from "./pages/Services";
 import SignUp from "./pages/SignUp";
 import ForgotPassword from "./pages/ForgotPassword";
+import BecomeATaskPerformer from "./pages/BecomeATaskPerformer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/services' element={<Services />} />
           <Route path='/sign-up' element={<SignUp />} />
           <Route path='/forgot-password' element={<ForgotPassword />} />
+          <Route path="/become-a-task-performer" element={<BecomeATaskPerformer />} />
         </Routes>
       </div>
     </div>

@@ -12,7 +12,7 @@ const ForgotPassword = () => {
     <div className="min-h-screen relative overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img 
-          src="images/loginBg1.jpg" 
+          src="images/loginBg1.webp" 
           alt="Person assembling furniture" 
           className="w-full h-full object-cover"
         />

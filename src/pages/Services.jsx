@@ -8,7 +8,7 @@ const Services = () => {
       <Navbar />
       <div
         className="h-[40vh] bg-cover bg-center relative flex justify-center items-center"
-        style={{ backgroundImage: "url('/images/tools1.jpg')" }}
+        style={{ backgroundImage: "url('/images/tools1.webp')" }}
       >
         <div className="text-white text-4xl font-semibold bg-black bg-opacity-50 px-4 py-2 rounded-lg">
           Your To-Do List is on Us

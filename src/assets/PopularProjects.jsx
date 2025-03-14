@@ -6,7 +6,7 @@ const PopularProjects = () => {
       id: 1,
       title: 'Furniture Assembly',
       price: '$',
-      image: 'images/assembly.jpg'
+      image: 'images/assembly.webp'
     },
     {
       id: 2,
