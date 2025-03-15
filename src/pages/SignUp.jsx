@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
   const [name, setName] = useState('');
@@ -9,7 +10,7 @@ const SignUp = () => {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword,setShowConfirmPassword] = useState(false);
-
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Login attempted with:', { email, password });
@@ -20,6 +21,9 @@ const SignUp = () => {
   const toggleConfirmPasswordVisibility = () => {
     setShowConfirmPassword(!showConfirmPassword);
   };
+  const handleNavigation = (path)=>{
+    navigate(path);
+  }
   return (
     <>
     <Navbar/>
@@ -144,7 +148,7 @@ const SignUp = () => {
           <div className="mt-6 text-center text-sm text-gray-600">
             <p>
             already have an account?
-              <a href="/login" className="text-orange-500 text-md font-semibold  hover:text-Orange ">Login here</a>
+              <a href="" onClick={()=>handleNavigation('/login')} className="text-orange-500 text-md font-semibold  hover:text-Orange ">Login here</a>
             </p>
           </div>
         </div>
