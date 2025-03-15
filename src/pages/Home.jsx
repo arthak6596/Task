@@ -14,7 +14,7 @@ const Home = () => {
     { 
       name: 'Assembly', 
       icon: '🔧', 
-      image: 'images/assembly.webp',
+      image: 'images/assembly1.webp',
       description: 'Assemble or disassemble furniture items by unboxing, building, and any cleanup.',
       trending: 'Now Trending: Curved sofas, computer desks, and sustainable materials.'
     },
